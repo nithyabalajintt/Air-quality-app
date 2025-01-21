@@ -1,17 +1,13 @@
 [build]
-  functions = "functions/fast.py"
-  publish = "."  
+  base = "/opt/build/repo"
+  command = "pip install -r requirements.txt"
+  publish = "/opt/build/repo"
 
 [build.environment]
   PYTHON_VERSION = "3.10.0"
-
+  
 [functions]
-  directory = "functions/fast.py"
-  external_node_modules = [
-    "fastapi",
-    "mangum",
-    "jinja2",
-    "numpy",
-    "pandas",
-    "scikit-learn"
-  ]
+  functionsDirectory = "functions"  
+
+[[functions]]
+  external_node_modules = ["fastapi", "mangum", "jinja2", "numpy", "pandas", "scikit-learn"]
