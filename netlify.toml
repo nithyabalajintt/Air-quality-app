@@ -1,10 +1,12 @@
 [build]
-  base = "."  # Root directory
-  command = "pip install -r requirements.txt"
-  
+  base = "."  # Root directory of the project
+  command = "pip install -r requirements.txt && python fast.py"  # Combine into a single command
+  publish = "."  # Directory to publish (ensure it points to your index.html or output)
+  functions = "functions"  # Directory for serverless functions
+
 [build.environment]
-  PYTHON_VERSION = "3.10.0"
-  
+  PYTHON_VERSION = "3.10.0"  # Use Python 3.10.0 for your environment
+
 [functions]
-  directory = "functions"  
-  external_node_modules = ["fastapi", "mangum", "jinja2", "numpy", "pandas", "scikit-learn"]
+  directory = "functions"  # Path to your serverless functions folder
+  external_node_modules = ["fastapi", "mangum", "jinja2", "numpy", "pandas", "scikit-learn"]  # Ensure the required Python modules are installed
