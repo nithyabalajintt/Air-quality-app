@@ -1,6 +1,7 @@
 [build]
   base = "."  # Root directory of the project
-  command = "pip install -r requirements.txt && python fast.py"  # Combine into a single command
+  command = "pip install -r requirements.txt && python functions/fast.py"
+  # Combine into a single command
   publish = "."  # Directory to publish (ensure it points to your index.html or output)
   functions = "functions"  # Directory for serverless functions
 
