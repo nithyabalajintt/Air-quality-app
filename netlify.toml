@@ -8,6 +8,4 @@
   
 [functions]
   functionsDirectory = "functions"  
-
-[[functions]]
   external_node_modules = ["fastapi", "mangum", "jinja2", "numpy", "pandas", "scikit-learn"]
