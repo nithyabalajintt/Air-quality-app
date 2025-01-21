@@ -1,9 +1,17 @@
 [build]
-  functions = "functions"
+  functions = "functions/fast.py"
+  publish = "dist"  
 
 [build.environment]
   PYTHON_VERSION = "3.10.0"
 
 [functions]
-  directory = "functions"
-  external_node_modules = ["fastapi", "jinja2", "uvicorn", "numpy", "pandas", "scikit-learn", "mangum"]
+  directory = "functions/faaast.py"
+  external_node_modules = [
+    "fastapi",
+    "mangum",
+    "jinja2",
+    "numpy",
+    "pandas",
+    "scikit-learn"
+  ]
