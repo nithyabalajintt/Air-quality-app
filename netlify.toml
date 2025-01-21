@@ -1,8 +1,7 @@
 [build]
-  base = "/opt/build/repo"
+  base = "."  # Root directory
   command = "pip install -r requirements.txt"
-  publish = "/opt/build/repo"
-
+  
 [build.environment]
   PYTHON_VERSION = "3.10.0"
   
