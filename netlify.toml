@@ -1,6 +1,6 @@
 [build]
   base = "."  # Root directory of the project
-  command = "python functions/fast.py"  # Command to run your Python script
+  command = "pip install -r requirements.txt"  # Install dependencies
   publish = "."  # Directory to publish (ensure it points to your index.html or output)
   functions = "functions"  # Directory for serverless functions
 
@@ -9,4 +9,3 @@
 
 [functions]
   directory = "functions"  # Path to your serverless functions folder
-  external_node_modules = ["fastapi", "mangum", "jinja2", "numpy", "pandas", "scikit-learn"]  # Required Python modules
