@@ -7,5 +7,5 @@
   PYTHON_VERSION = "3.10.0"
   
 [functions]
-  functionsDirectory = "functions"  
+  directory = "functions"  
   external_node_modules = ["fastapi", "mangum", "jinja2", "numpy", "pandas", "scikit-learn"]
