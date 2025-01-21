@@ -1,7 +1,9 @@
 [build]
   base = "."  # Root directory of the project
-  command = "python functions/fast.py"
-  # Combine into a single command
+  command = """
+    pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org fastapi numpy mangum pandas uvicorn &&
+    python fast.py
+  """
   publish = "."  # Directory to publish (ensure it points to your index.html or output)
   functions = "functions"  # Directory for serverless functions
 
