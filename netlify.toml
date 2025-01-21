@@ -1,6 +1,9 @@
 [build]
-  functions = "./functions"
-  publish = "."
+  functions = "functions"
 
 [build.environment]
   PYTHON_VERSION = "3.10.0"
+
+[functions]
+  directory = "functions"
+  external_node_modules = ["fastapi", "jinja2", "uvicorn", "numpy", "pandas", "scikit-learn", "mangum"]
