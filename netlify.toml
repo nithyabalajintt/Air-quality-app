@@ -2,7 +2,7 @@
   base = "."  # Root directory of the project
   command = """
     pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org fastapi numpy mangum pandas uvicorn &&
-    python fast.py
+    python function/fast.py
   """
   publish = "."  # Directory to publish (ensure it points to your index.html or output)
   functions = "functions"  # Directory for serverless functions
