@@ -1,3 +1,4 @@
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org fastapi numpy mangum pandas uvicorn
 from fastapi import FastAPI, Request, Form
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
