@@ -1,12 +1,12 @@
 [build]
   functions = "functions/fast.py"
-  publish = "dist"  
+  publish = "."  
 
 [build.environment]
   PYTHON_VERSION = "3.10.0"
 
 [functions]
-  directory = "functions/faaast.py"
+  directory = "functions/fast.py"
   external_node_modules = [
     "fastapi",
     "mangum",
