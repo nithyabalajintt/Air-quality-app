@@ -1,9 +1,6 @@
 [build]
   base = "."  # Root directory of the project
-  command = """
-    pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org fastapi numpy mangum pandas uvicorn &&
-    python function/fast.py
-  """
+  command = "python functions/fast.py"  # Command to run your Python script
   publish = "."  # Directory to publish (ensure it points to your index.html or output)
   functions = "functions"  # Directory for serverless functions
 
@@ -12,4 +9,4 @@
 
 [functions]
   directory = "functions"  # Path to your serverless functions folder
-  external_node_modules = ["fastapi", "mangum", "jinja2", "numpy", "pandas", "scikit-learn"]  # Ensure the required Python modules are installed
+  external_node_modules = ["fastapi", "mangum", "jinja2", "numpy", "pandas", "scikit-learn"]  # Required Python modules
