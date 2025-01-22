@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "fast.py",
+      "src": "functions/fast.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "fast.py"
+      "dest": "functions/fast.py"
     }
   ]
 }
